@@ -1,4 +1,5 @@
 Projeto Av2Igor
+
 Descrição do Microserviço
 Este projeto é uma aplicação Spring Boot que implementa um sistema de autenticação e controle de acesso baseado em JWT (JSON Web Token). A aplicação permite o registro de novos usuários, autenticação segura através de login e controle de acesso a diferentes endpoints baseado no tipo de usuário (administrador, gerente de produtos, vendedor ou cliente).
 
@@ -22,7 +23,13 @@ GET /manager/{token}: Acesso para gerentes de produtos.
 GET /admin/{token}: Acesso para administradores.
 GET /user/{token}: Acesso para clientes.
 Diagrama de Arquitetura
-<img src="diagrama-microservicos.png" alt="Diagrama de Microsserviços">
+
+![diagrama1](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/28e41da3-9ac0-4442-a1e7-08facf32691e)
+
+
+![diagrama2](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/218f7ad5-4089-40b5-9d79-65867a7905b7)
+
+
 Descrição do Diagrama
 O diagrama representa a arquitetura do serviço, detalhando os componentes, endpoints, fluxo de solicitações e dependências. Inclui:
 
@@ -32,11 +39,27 @@ UserController: Controlador REST que gerencia os endpoints de login e acesso bas
 UserEntity: Modelo de entidade que representa um usuário.
 JwtUtil: Utilitário para geração e extração de informações de tokens JWT.
 UserService: Serviço que encapsula a lógica de negócios relacionada aos usuários, incluindo a geração e extração de tokens JWT.
-Contato e Plantão
-Nome: Igor
-E-mail: igor@example.com
-Telefone: (00) 0000-0000
-Guia de Desenvolvimento
+
 Requisitos
-JDK 11 ou superior
+JDK 17 ou superior
 Maven 3.6.3 ou superior
+
+Prints do Funcionamento:
+
+![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/02cd5e63-d6b1-4dfc-98dd-923641e106b3)
+
+![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/346c19bd-ca72-4186-af83-5f9625b417be)
+
+![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/c06ebc53-ec6b-4b59-b876-ac6932de7a4b)
+
+![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/084ac460-696f-4d9f-8dfa-314daa932813)
+
+![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/882b34b0-035d-44dc-83f3-ac8fe4d9bc05)
+
+![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/5f07b4f6-8bf5-4315-9225-4eac2b50f2f8)
+
+
+
+
+
+
