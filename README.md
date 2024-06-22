@@ -59,50 +59,6 @@ Prints do Funcionamento:
 ![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/5f07b4f6-8bf5-4315-9225-4eac2b50f2f8)
 
 
----
-title: UserController Activity Diagram
----
-graph TD
-    A[UserEntity]
-    B[UserService]
-    C[JwtUtil]
-    start((Start))
-    login[[/login]]
-    nomeusuario[[/nomeusuario/{token}]]
-    gerente[[/gerente/{token}]]
-    admin[[/admin/{token}]]
-    usuario[[/usuario/{token}]]
-    end((End))
-
-    start --> login
-    login --> |login(UserEntity usuario)| B
-    B --> |generateToken(usuario.nome)| C
-    C --> |generateToken| loginResult[Token]
-    loginResult --> end
-
-    start --> nomeusuario
-    nomeusuario --> |extractUsername(String token)| B
-    B --> |extractUsername| C
-    C --> |extractUsername| nomeusuarioResult[Username]
-    nomeusuarioResult --> end
-
-    start --> gerente
-    gerente --> |buscaGerente(String token)| B
-    B --> |extractUsername(token)| C
-    C --> |extractUsername| gerenteResult[Username]
-    gerenteResult --> end
-
-    start --> admin
-    admin --> |buscaAdmin(String token)| B
-    B --> |extractUsername(token)| C
-    C --> |extractUsername| adminResult[Username]
-    adminResult --> end
-
-    start --> usuario
-    usuario --> |buscaUsuario(String token)| B
-    B --> |extractUsername(token)| C
-    C --> |extractUsername| usuarioResult[Username]
-    usuarioResult --> end
 
 
 
