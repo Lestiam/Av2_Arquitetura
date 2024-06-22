@@ -59,9 +59,7 @@ Prints do Funcionamento:
 ![image](https://github.com/Lestiam/Av2_Arquitetura/assets/108492529/5f07b4f6-8bf5-4315-9225-4eac2b50f2f8)
 
 
-
-
-mermaid
+``` mermaid
 graph TD;
     subgraph User_Operations
         A1[Registra Usuário] --> B1[Autentica Usuário]
@@ -104,8 +102,7 @@ graph TD;
     Admin_Operations -->|Acesso a Dados| I
     Manager_Operations -->|Acesso a Dados| I
     Seller_Operations -->|Acesso a Dados| I
-    Customer_Operations -->|Acesso a Dados| I
-
+    Customer_Operations -->|Acesso a Dados| I```
 
 
 
